@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de taxas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora juros simples</h1>
+        <form action="">
+            <div class="form-item">
+                <label for="vem">Valor do bem:</label>
+                <input id="bem" placeholder="Valor do bem" type="text">
+            </div>
+            <div class="form-item">
+                <label for="entrada">Valor de entrada:</label>
+                <input id="entrada" placeholder="Valor da entrada" type="text">
+            </div>
+            <div class="form-item">
+                <label for="parcela">Número de parcelas:</label>
+                <input id="parcela" placeholder="Meses" type="text">
+            </div>
+            <div class="form-item">
+                <label for="juro">Taxa de juros %</label>
+                <input id="juro" placeholder="Taxa de juros" type="text">
+            </div>
+        </form>
+        <button class="btn">Calcular parcela</button>
+
+        <div class="return">
+           
+            <div class="res-parcela"></div>
+        </div>
+        <div class="detalhes">
+            <button class="details">Detalhes do financiamento</button>
+             <div class="res"></div>
+           
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="jquery.mask.min.js">
+        $('#bem').mask('00000,00')
+    </script>
+</body>
+</html>

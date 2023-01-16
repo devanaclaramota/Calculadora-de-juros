@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(24, 24, 24);
+    h1{
+        color: yellow;
+        text-align: center;
+
+
+    }
+    form{
+        width: 500px;
+        margin: auto;
+        padding: 16px;
+        .form-box{
+            color: white;
+            padding: 12px;
+            input{
+                padding: 8px;
+                
+
+            }
+        }
+    }
+    button{
+
+        background-color: yellow;
+        margin-top: 16px;
+        padding: 12px;
+        width: 350px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(243, 243, 126);
+        }
+    }
+
+}

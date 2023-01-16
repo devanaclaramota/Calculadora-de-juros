@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+body main {
+  max-width: 500px;
+  height: 600px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.747), rgba(0, 217, 255, 0.933));
+}
+body main h1 {
+  color: silver;
+  text-align: center;
+}
+body main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+body main form .form-item {
+  height: 100px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+body main form .form-item input {
+  padding: 12px;
+}
+body main .btn {
+  width: 100%;
+  background-color: navy;
+  border: 2px solid yellow;
+  color: white;
+  padding: 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+body main .btn:hover {
+  background-color: rgb(49, 49, 182);
+}
+body main .res-parcela {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 40px;
+  background-color: yellow;
+  padding: 20px;
+  color: black;
+}
+body main .detalhes .details {
+  color: gray;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  margin-left: 120px;
+  cursor: pointer;
+}
+body main .detalhes .res {
+  color: rgb(54, 54, 54);
+  text-align: center;
+  padding: 8px;
+}
+body main .detalhes .res strong {
+  color: navy;
+}/*# sourceMappingURL=styles.css.map */
