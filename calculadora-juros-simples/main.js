@@ -29,4 +29,3 @@ function mostrarDetalhes(){
        res.innerHTML = (`O valor a ser financiado é de : <strong> ${valorFinanc}</strong> <br> O Cálculo juros é de: <strong>${calcJuros}</strong>  <br> O total com juros é de: <strong>${totalcomJuros}</strong> `)
        
 }}
-$('#bem').mask('00000,00')

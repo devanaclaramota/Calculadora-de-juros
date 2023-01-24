@@ -10,7 +10,7 @@ body {
 }
 body main {
   max-width: 500px;
-  height: 600px;
+  height: 650px;
   padding: 30px;
   margin: auto;
   border-radius: 10px;
@@ -19,6 +19,13 @@ body main {
 body main h1 {
   color: silver;
   text-align: center;
+}
+body main .change {
+  padding: 20px;
+}
+body main .change a {
+  font-size: 0.8em;
+  color: white;
 }
 body main form {
   display: grid;
@@ -70,4 +77,26 @@ body main .detalhes .res {
 }
 body main .detalhes .res strong {
   color: navy;
+}
+
+@media (max-width: 676px) {
+  body {
+    background-color: red;
+  }
+  main {
+    width: 350px;
+  }
+  main form {
+    margin-top: 40px;
+    display: block;
+  }
+  main form .form-item {
+    height: 100px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  main form .form-item input {
+    padding: 12px;
+  }
 }/*# sourceMappingURL=styles.css.map */

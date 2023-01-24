@@ -5,58 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de jurso compostos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="C:\Users\devan\OneDrive\Documents\Calculadora-de-juros\calculadora-juros-simples\styles.css">
 </head>
-<body>
-    <h1>Calculadora de juros compostos</h1>
-    <form action="post">
-         <div class="form-box">
-        <label for="capital">Quando você quer investir?</label> <br>
-        <input id="capital" placeholder="Investimento inicial" type="text">
-    </div>
-    <div class="form-box">
-        <label for="aporte">Quanto você pode investir todo mês?</label> <br>
-        <input type="text" id="aporte" placeholder="Aporte mensal">
-    </div>
-    <div class="form-box">
-         <label for="tempo">Por quanto tempo ?</label> <br>
-        <input id="tempo" placeholder="Tempo do investimento" type="text"> 
-    </div>
-    <div class="form-box">
-        <label for="juro">Taxa de juros mensal</label> <br>
-        <input id="juro" placeholder="Taxa de juros" type="text">
-    </div>
-     <button class="btn">Calcular investimento </button>
-    </form>
-   
+<style>
+   .position{
+    margin-top: 100px;
+   }
     
-   
+</style>
+<body>
+    <main>
+    <h1>Calculadora de juros compostos</h1>
+    <span class="change"><a href="C:\Users\devan\OneDrive\Documents\Calculadora-de-juros\calculadora-juros-simples\jurosSimples.html">Calcular juros Simples</a> </span>
+    <form action="post">
+         <div class="form-item">
+        <label for="capital">Quando você quer investir?</label> <br>
+        <input autocomplete="off" required id="capital" placeholder="Investimento inicial" type="text">
+    </div>
+    
+    <div class="form-item position">
+         <label for="tempo">Por quanto tempo ?</label> <br>
+        <input  autocomplete="off" required id="tempo" placeholder="Tempo do investimento" type="text"> 
+    </div>
+    <div class="form-item">
+        <label for="juro">Taxa de juros mensal</label> <br>
+        <input  autocomplete="off" required id="juro" placeholder="Taxa de juros" type="text">
+    </div>
+     
+    </form>
+   <button class="btn">Calcular investimento </button>
+    
+    <div class="return"> 
+        <div class="res-parcela"></div>
+    </div>
+</main>
+    <script src="scripts-composto.js"></script>
 
-    <div class="res"></div>
-   
-
-
-    <script>
-
-        let btn = document.querySelector('.btn')
-        let res = document.querySelector('.res')
-
-        btn.addEventListener('click', composto)
-
-        function composto(){
-            let capital = parseFloat(document.querySelector('#capital').value)
-            let tempo = parseFloat(document.querySelector('#tempo').value)
-            let juros = parseFloat(document.querySelector('#juro').value) /100
-            let aporte =  parseFloat(document.querySelector('#aporte').value)
-
-
-            //Para esse lógica devo colocar o aporte mensal junto ao capital pelo até que atinja o periodo de tempo do investimento
-          
-
-            let montante = capital*(1+juros)**tempo
-
-            res.innerHTML = (`${montante}`)
-        }  
-    </script>
 </body>
 </html>

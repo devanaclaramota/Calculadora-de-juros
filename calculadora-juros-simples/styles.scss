@@ -6,12 +6,10 @@
     
 }
 body{
-   
-    background-color: lightgray;
-
+        background-color: lightgray;
     main{
         max-width: 500px;
-        height: 600px;
+        height: 650px;
         padding: 30px;
         margin:auto;
         border-radius: 10px; background-image: linear-gradient( to bottom, rgba(0, 0, 255, 0.747),rgba(0, 217, 255, 0.933));
@@ -20,6 +18,13 @@ body{
         h1{
             color: silver;
             text-align: center;
+        }
+        .change{
+            padding: 20px;
+            a{
+                font-size: 0.8em;
+                color: white;
+            }
         }
         form{
             display: grid;
@@ -79,4 +84,26 @@ body{
         }
     }
 }
+}
+@media(max-width:676px){
+    body{
+        background-color: red;
+    }
+    main{
+        width: 350px;
+        form{
+            margin-top: 40px;
+            display: block;
+            .form-item{
+                height: 100px;
+                color:white ;
+                font-size: 1.2em;
+                font-weight: 400;
+                input{
+                    padding: 12px;
+
+                }
+            }
+        }
+    }
 }
